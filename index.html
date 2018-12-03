@@ -26,12 +26,44 @@
     <img class="family" src="media/myfamily.jpg">
   </div>
   </section>
+  <section>
+    <div class="right"></div>
+    <div id="map"></div>
+    <script>
+      var map;
+      var chicago = {lat: 41.887855, lng: -87.630347};
+      var dubai = {lat: 25.2048, lng: 55.2708};
+      var puerto rico = {lat: 18.448335, lng: -67.158733};
+      function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: chicago
+      });
+      var marker = new google.maps.Marker({
+      position: (chicago, puerto rico, dubai),
+      map: map
+      });
+      }
+      function goto(location){
+      map.panTo(location);
+      map.setZoom(15);
+      }
+      </script> 
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHcBlXymimy_bUuk_VwvW1ZKxPEe4W-HI&callback=initMap">
+      </script>
+    <div class="left">
+      <p>The map shows Chicago, Puerto Rico my home and Dubai my favorite vacation. Click the buttons below to go to a place!</p>
+      <button onclick="goto(chicago)" type="button">Chicago</button>
+      <button onclick="goto(dubai)" type="button">Dubai</button>
+      <button onclick="goto(Puerto rico)" type="button">Puerto Rico</button> <button
+  </div>
+  </section>
 <footer class ="footer">
   <h3><em> Contact Information </em></h3>
 	<ul>
 	<li> Email: <a href="bcalerogonzalez@hawk.iit.edu"> bcalerogonzalez@hawk.iit.edu </a></li>
 	<li> Github: <a href="https://github.com/bcalerogonzalez"> Click here </a></li> 
   </ul>
-    </footer>
+</footer>
 </body>
 </html>
