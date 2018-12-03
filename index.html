@@ -41,26 +41,11 @@
           center: puerto
         });
         var marker = new google.maps.Marker({
-          position: (puerto),
+          position: (puerto, crash, villa, lajas),
           map: map
         });
       }
-        var marker = new google.maps.Marker({
-          position: (crash),
-          map: map
-        });
-      }
-        var marker = new google.maps.Marker({
-          position: (villa),
-          map: map
-        });
-      }
-        var marker = new google.maps.Marker({
-          position: (lajas),
-          map: map
-        });
-      }
-       function goto(location){
+            function goto(location){
             map.panTo(location);
             map.setZoom(15);
           }
