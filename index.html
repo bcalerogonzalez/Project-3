@@ -25,8 +25,7 @@
     <p> My name is Bryan Calero and I am currently doing my Bachelors in Information Technology Management at the Illinois Institute of Technology. I am trying to specialize in system security. My main goal is to complete a co-terminal program in IIT and to graduate with a Master's degree in Cybersecurity and Forensics. My family is my ultimate drive, if you want to know more about me check the tab above.</p>
     <img class="family" src="media/myfamily.jpg" alt= "My Family">
   </div>
-  </section>
-	<section>
+  <section>
     <div class="right"></div>
     <div id="map"></div>
     <script>
@@ -37,18 +36,18 @@
       var lajas = {lat: 17.975064, lng: -67.049486};
       function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: puerto
+        zoom: 4,
+        center: puerto
         });
-        var marker = new google.maps.Marker({
-          position: (puerto, crash, villa, lajas),
-          map: map
+      var marker = new google.maps.Marker({
+        position: (puerto, crash, villa, lajas),
+        map: map
         });
-      }
-            function goto(location){
-            map.panTo(location);
-            map.setZoom(15);
-          }
+        }
+      function goto(location){
+       map.panTo(location);
+       map.setZoom(15);
+       }
     </script> 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb96m81BD1VAyuA0QqT6AlIchsiBbl2Dk&callback=initMap">
     </script>
@@ -58,10 +57,10 @@
   </section>
 <footer class ="footer">
   <h3><em> Contact Information </em></h3>
-	<ul>
-	<li> Email: <a href="bcalerogonzalez@hawk.iit.edu"> bcalerogonzalez@hawk.iit.edu </a></li>
-	<li> Github: <a href="https://github.com/bcalerogonzalez"> Click here </a></li> 
-  </ul>
+    <ul>
+      <li> Email: <a href="bcalerogonzalez@hawk.iit.edu"> bcalerogonzalez@hawk.iit.edu </a></li>
+      <li> Github: <a href="https://github.com/bcalerogonzalez"> Click here </a></li> 
+   </ul>
 </footer>
 </body>
 </html>
