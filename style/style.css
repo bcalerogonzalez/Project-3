@@ -68,7 +68,6 @@ img.myfamily {
   height: 50%;
 }
 
-}
 #gray {
   text-align: center;
   margin-left: auto;
@@ -96,7 +95,7 @@ img.gray {
 }
 @media screen and (max-width: 500px) {
   #navigation li {
-    display: :inline;
+    display: inline;
     width: 100%;
     border-bottom: 20px;
     font-size: 25px;
