@@ -4,10 +4,6 @@
   <meta charset="utf-8">
   <title> Project Three </title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
-  <script src="JS/script.js"></script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkezNUzzJwgBAAW5mp9Beocub7WCl898&callback=initMap">
-  </script>
 </head>
 <body>
   <nav id="navigation">
@@ -29,6 +25,38 @@
     <p> My name is Bryan Calero and I am currently doing my Bachelors in Information Technology Management at the Illinois Institute of Technology. I am trying to specialize in system security. My main goal is to complete a co-terminal program in IIT and to graduate with a Master's degree in Cybersecurity and Forensics. My family is my ultimate drive, if you want to know more about me check the tab above.</p>
     <img class="family" src="media/myfamily.jpg">
   </div>
+  </section>
+	<section>
+    <div class="right"></div>
+    <div id="map"></div>
+    <script>
+      var map;
+      var zeta = {lat: 41.8336417, lng: -87.6259347};
+      var gamma = {lat: 42.0012436, lng: -87.6624455};
+      var theta = {lat: 40.9434769, lng: -90.3723725};
+      var delta = {lat: 41.9231283, lng: -87.6564171};
+      function initMap() {
+        
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: zeta
+        });
+        var marker = new google.maps.Marker({
+          position: (zeta, gamma, theta, delta),
+          map: map
+        });
+      }
+       function goto(location){
+            map.panTo(location);
+            map.setZoom(15);
+          }
+    </script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHcBlXymimy_bUuk_VwvW1ZKxPEe4W-HI&callback=initMap">
+    </script>
+    <div class="left">
+      <h3>Alpha Sigma Alpha Chapters</h3>
+      <p>The map shows other ASA locations. Click the buttons below to go to a place!</p><button onclick="goto(zeta)" type="button">Zeta Phi</button> <button onclick="goto(gamma)" type="button">Gamma Lambda</button> <button onclick="goto(theta)" type="button">Theta NU</button> <button onclick="goto(delta)" type="button">Delta Eta</button>
+    </div>
   </section>
 <footer class ="footer">
   <h3><em> Contact Information </em></h3>
