@@ -31,16 +31,17 @@
     <div id="map"></div>
     <script>
       var map;
-      var  iit= {lat: 41.8336417, lng: -87.6259347};
-      var chicago = {lat: 42.0012436, lng: -87.6624455};
-      var puerto rico = {lat: 40.9434769, lng: -90.3723725};
+      var  puerto rico = {lat: 18.158912, lng: -66.506909};
+      var crash boat= {lat: 18.458954, lng: -67.163973};
+      var villa montana = {lat: 18.512994, lng: -67.102764};
+      var lajas = {lat: 17.975064, lng: -67.049486};
       function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 3,
-          center: iit
+          zoom: 4,
+          center: puerto rico
         });
         var marker = new google.maps.Marker({
-          position: (iit, chicago, puerto rico),
+          position: (puerto rico, crash boat, villa montana, lajas),
           map: map
         });
       }
@@ -49,7 +50,7 @@
             map.setZoom(15);
           }
     </script> 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHcBlXymimy_bUuk_VwvW1ZKxPEe4W-HI&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb96m81BD1VAyuA0QqT6AlIchsiBbl2Dk&callback=initMap">
     </script>
     <div class="left">
       <p>The map shows IIT, Chicago and the place I call home, Puerto Rico. Click the buttons below to go to a place!</p><button onclick="goto(iit)" type="button">IIT</button> <button onclick="goto(chicago)" type="button">Chicago</button> <button onclick="goto(puerto rico)" type="button">Puerto Rico</button> 
