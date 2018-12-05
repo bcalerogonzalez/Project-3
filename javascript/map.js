@@ -16,5 +16,5 @@ function initMap() {
 function goto(location){
   map.panTo(location);
   map.setZoom(15);
-}
 <button onclick="goto(puerto)" type="button">Puerto Rico</button> <button onclick="goto(crash)" type="button">Crash Boat</button> <button onclick="goto(villa)" type="button">Villa Montana</button> <button onclick="goto(lajas)" type="button">Lajas</button>
+}
