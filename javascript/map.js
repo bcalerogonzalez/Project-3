@@ -10,8 +10,26 @@ function initMap() {
     center: puerto
   });
 	
-  var marker = new google.maps.Marker({
-    position: (puerto, crash, villa, lajas),
+  var marker1 = new google.maps.Marker({
+    position: (puerto),
+    map: map
+  });
+}
+
+ var marker2 = new google.maps.Marker({
+    position: (crash),
+    map: map
+  });
+}
+
+ var marker = new google.maps.Marker({
+    position: (villa),
+    map: map
+  });
+}
+
+ var marker = new google.maps.Marker({
+    position: (lajas),
     map: map
   });
 }
