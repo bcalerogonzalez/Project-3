@@ -25,7 +25,7 @@ function initMap(){
     map: map
   });
 		
- var marker3=new google.maps.Marker({
+ var marker4=new google.maps.Marker({
     position: lajas
     map: map
   });		
